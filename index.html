@@ -39,6 +39,10 @@
         #map {
             height: 300px;
         }
+
+        #clearMap {
+            border-radius: 10px;
+        }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -49,10 +53,122 @@
 <body>
     <h1 class="header">JS+jquery串高雄輕軌</h1>
     <div class="title"></div>
+    <div id="map"></div>
+    <button id="clearMap">先清除地圖，才能按輕軌卡片</button>
     <h4></h4>
     <ul></ul>
     <script>
+        $(document).ready(function () {
+            $("#0").click(function () {
+                var map = L.map('map').setView([22.6046547, 120.3246512], 13);
 
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6046547, 120.3246512]).addTo(map)
+                    .bindPopup('籬仔內站')
+                    .openPopup();
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;  // 清除map實例
+                    }
+                });
+
+            });
+            $("#1").click(function () {
+                var map = L.map('map').setView([22.5995071, 120.3197511], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.5995071, 120.3197511]).addTo(map)
+                    .bindPopup('凱旋瑞田站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null; // 清除map實例
+                    }
+                });
+            });
+            $("#2").click(function () {
+                var map = L.map('map').setView([22.5954767, 120.3153478], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.5995071, 120.3197511]).addTo(map)
+                    .bindPopup('前鎮之星站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#3").click(function () {
+                var map = L.map('map').setView([22.5936295, 120.310496], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.5936295, 120.310496]).addTo(map)
+                    .bindPopup('凱旋中華站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#4").click(function () {
+                var map = L.map('map').setView([22.5948593, 120.3049849], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.5948593, 120.3049849]).addTo(map)
+                    .bindPopup('夢時代站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+
+            $("#5").click(function () {
+                var map = L.map('map').setView([22.6009345, 120.3026403], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6009345, 120.3026403]).addTo(map)
+                    .bindPopup('經貿園區站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+        });
 
         let data = [
             {
