@@ -35,7 +35,15 @@
             padding: 8px 13px;
             font-size: 18px;
         }
+
+        #map {
+            height: 300px;
+        }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
@@ -44,6 +52,7 @@
     <h4></h4>
     <ul></ul>
     <script>
+
 
         let data = [
             {
@@ -421,7 +430,7 @@
         console.log(data.length);
         for (let i = 0; i < data.length; i++) {
             let li = '';
-            li += `<li>`;
+            li += `<li id='${i}'>`;
             li += `${data[i].車站中文名稱}`;
             li += `<br>`;
             li += `經度:${data[i].Longitude}`;
