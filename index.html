@@ -168,6 +168,42 @@
                     }
                 });
             });
+            $("#6").click(function () {
+                var map = L.map('map').setView([22.6056585, 120.3008122], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6056585, 120.3008122]).addTo(map)
+                    .bindPopup('軟體園區站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#7").click(function () {
+                var map = L.map('map').setView([22.6101078, 120.2980026], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6101078, 120.2980026]).addTo(map)
+                    .bindPopup('高雄展覽館站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
         });
 
         let data = [
