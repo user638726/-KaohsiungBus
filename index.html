@@ -188,15 +188,70 @@
                     }
                 });
             });
-            $("#7").click(function () {
-                var map = L.map('map').setView([22.6101078, 120.2980026], 13);
+
+            $("#8").click(function () {
+                var map = L.map('map').setView([22.6115998, 120.2934187], 13);
 
                 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(map);
 
-                L.marker([22.6101078, 120.2980026]).addTo(map)
-                    .bindPopup('高雄展覽館站')
+                L.marker([22.6115998, 120.2934187]).addTo(map)
+                    .bindPopup('旅運中心站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#9").click(function () {
+                var map = L.map('map').setView([22.6167276, 120.2931869], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6167276, 120.2931869]).addTo(map)
+                    .bindPopup('光榮碼頭站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#10").click(function () {
+                var map = L.map('map').setView([22.61929, 120.2894459], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.61929, 120.2894459]).addTo(map)
+                    .bindPopup('真愛碼頭站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#11").click(function () {
+                var map = L.map('map').setView([22.6185377, 120.2841808], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6185377, 120.2841808]).addTo(map)
+                    .bindPopup('駁二大義站')
                     .openPopup();
 
                 $("#clearMap").click(function () {
