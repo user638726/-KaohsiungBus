@@ -188,7 +188,24 @@
                     }
                 });
             });
+            $("#7").click(function () {
+                var map = L.map('map').setView([22.6101078, 120.2980026], 13);
 
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6101078, 120.2980026]).addTo(map)
+                    .bindPopup('高雄展覽館站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
             $("#8").click(function () {
                 var map = L.map('map').setView([22.6115998, 120.2934187], 13);
 
@@ -325,6 +342,222 @@
 
                 L.marker([22.62959, 120.2807]).addTo(map)
                     .bindPopup('文武聖殿站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#16").click(function () {
+                var map = L.map('map').setView([22.6359, 120.2826], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6359, 120.2826]).addTo(map)
+                    .bindPopup('鼓山區公所站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#17").click(function () {
+                var map = L.map('map').setView([22.642009, 120.2810928], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.642009, 120.2810928]).addTo(map)
+                    .bindPopup('鼓山站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#18").click(function () {
+                var map = L.map('map').setView([22.6470528, 120.2814855], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6470528, 120.2814855]).addTo(map)
+                    .bindPopup('馬卡道站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#19").click(function () {
+                var map = L.map('map').setView([22.65211753, 120.2817916], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65211753, 120.2817916]).addTo(map)
+                    .bindPopup('臺鐵美術館站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#20").click(function () {
+                var map = L.map('map').setView([22.65500075, 120.2828856], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65500075, 120.2828856]).addTo(map)
+                    .bindPopup('內惟藝術中心站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#21").click(function () {
+                var map = L.map('map').setView([22.65504612, 120.2872437], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65504612, 120.2872437]).addTo(map)
+                    .bindPopup('美術館站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#22").click(function () {
+                var map = L.map('map').setView([22.65480602, 120.2909322], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65480602, 120.2909322]).addTo(map)
+                    .bindPopup('聯合醫院站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#23").click(function () {
+                var map = L.map('map').setView([22.65447406, 120.2946752], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65447406, 120.2946752]).addTo(map)
+                    .bindPopup('龍華國小站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#24").click(function () {
+                var map = L.map('map').setView([22.65603647, 120.3027531], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65603647, 120.3027531]).addTo(map)
+                    .bindPopup('愛河之心站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#25").click(function () {
+                var map = L.map('map').setView([22.65628773, 120.3038127], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65628773, 120.3038127]).addTo(map)
+                    .bindPopup('愛河之心站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#26").click(function () {
+                var map = L.map('map').setView([22.65667514, 120.3083518], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65667514, 120.3083518]).addTo(map)
+                    .bindPopup('新上國小站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#27").click(function () {
+                var map = L.map('map').setView([22.65657845, 120.3092359], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65657845, 120.3092359]).addTo(map)
+                    .bindPopup('新上國小站')
                     .openPopup();
 
                 $("#clearMap").click(function () {
