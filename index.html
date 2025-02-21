@@ -44,6 +44,8 @@
         #clearMap {
             margin: auto;
             border-radius: 10px;
+            position: fixed;
+            display: inline-block;
         }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -640,6 +642,150 @@
                     }
                 });
             });
+            $("#32").click(function () {
+                var map = L.map('map').setView([22.65001014, 120.3238178], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.65001014, 120.3238178]).addTo(map)
+                    .bindPopup('高雄高工站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#33").click(function () {
+                var map = L.map('map').setView([22.64953119, 120.324533], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.64953119, 120.324533]).addTo(map)
+                    .bindPopup('高雄高工站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#34").click(function () {
+                var map = L.map('map').setView([22.64414704, 120.3262116], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.64414704, 120.3262116]).addTo(map)
+                    .bindPopup('樹德家商站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#35").click(function () {
+                var map = L.map('map').setView([22.64337399, 120.3265487], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.64337399, 120.3265487]).addTo(map)
+                    .bindPopup('樹德家商站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#36").click(function () {
+                var map = L.map('map').setView([22.63752371, 120.3273676], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.63752371, 120.3273676]).addTo(map)
+                    .bindPopup('科工館站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#37").click(function () {
+                var map = L.map('map').setView([22.63643343, 120.3270061], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.63643343, 120.3270061]).addTo(map)
+                    .bindPopup('科工館站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#38").click(function () {
+                var map = L.map('map').setView([22.6331814, 120.3258383], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6331814, 120.3258383]).addTo(map)
+                    .bindPopup('聖功醫院站(道明中學)')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#39").click(function () {
+                var map = L.map('map').setView([22.63240787, 120.3253824], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.63240787, 120.3253824]).addTo(map)
+                    .bindPopup('聖功醫院站(道明中學)')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
         });
 
         let data = [
@@ -1027,7 +1173,6 @@
             li += `</li>`;
             $('ul').append(li);
         }
-
     </script>
 </body>
 
