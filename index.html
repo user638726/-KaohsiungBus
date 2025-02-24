@@ -785,6 +785,115 @@
                     }
                 });
             });
+            $("#40").click(function () {
+                var map = L.map('map').setView([22.62945, 120.32283], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.62945, 120.32283]).addTo(map)
+                    .bindPopup('凱旋公園站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#41").click(function () {
+                var map = L.map('map').setView([22.6252, 120.32368], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.6252, 120.32368]).addTo(map)
+                    .bindPopup('衛生局站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+
+            $("#42").click(function () {
+                var map = L.map('map').setView([22.62121, 120.32519], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.62121, 120.32519]).addTo(map)
+                    .bindPopup('五權國小站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#43").click(function () {
+                var map = L.map('map').setView([22.616931, 120.32685], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.616931, 120.32685]).addTo(map)
+                    .bindPopup('凱旋武昌站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#44").click(function () {
+                var map = L.map('map').setView([22.612526, 120.327175], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.612526, 120.327175]).addTo(map)
+                    .bindPopup('凱旋二聖站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
+            $("#45").click(function () {
+                var map = L.map('map').setView([22.608503, 120.326069], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([22.608503, 120.326069]).addTo(map)
+                    .bindPopup('輕軌機廠站')
+                    .openPopup();
+
+                $("#clearMap").click(function () {
+                    if (map) {
+                        map.remove();
+                        map = null;// 清除map實例
+                    }
+                });
+            });
         });
 
         let data = [
